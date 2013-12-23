@@ -1,11 +1,13 @@
-# Heroku buildpack: Meteorite
+# Heroku buildpack: Meteorite (DEBUG MODE)
 
-This build pack allows you to easily deploy meteor apps to heroku using [meteorite](http://github.com/oortcloud/meteorite). It's easy to use different branches of meteor and any smart package you can lay your hands on.
+This buildpack is forked from [https://github.com/oortcloud/heroku-buildpack-meteorite.git](https://github.com/oortcloud/heroku-buildpack-meteorite.git)
+
+Due to some reasons, sometimes the minified codes cannot work. This build use the debug mode, in which codes won't be minified.
 
 ## Usage
 
 ```bash
-heroku create --stack cedar --buildpack https://github.com/oortcloud/heroku-buildpack-meteorite.git
+heroku create --stack cedar --buildpack https://github.com/waitingkuo/heroku-buildpack-meteorite-debug-mode.git
 ```
 
 Then `git push` to heroku as usual.
